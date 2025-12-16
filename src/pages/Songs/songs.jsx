@@ -1,7 +1,7 @@
 function Songs(){
     return(
         <>
-        <h1>hej sonngs</h1>
+        <h1>hej sonngs nikii</h1>
         </>
     )
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from 'react'
-import { NavLink } from "react-router";
+import { NavLink, useNavigate } from "react-router-dom";
 import styles from "./Header.module.css";
 import Login from "../login/Login";
 
@@ -13,11 +13,18 @@ const Welcome= ({username, logout}) => (
 const Header = ({ headers }) => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [username, setUserName] = useState("");
+  const navigate = useNavigate();
 
   const login = (username, password) => {
     if(username && password){
       setUserName(username)
-      setIsLoggedIn(true)
+      setIsLoggedIn(true);
+
+      if(username === "admin") {
+        navigate("/adminpage");
+      }else{
+        navigate("/home");
+      }
     }
     }
 

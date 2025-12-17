@@ -18,7 +18,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="Search" element={<Search/>} />
         <Route path="Songs" element={<Songs/>} />
         <Route path="Albums" element={<Albums/>} />
-        <Route path="Artists" element={<Artists/>} />
+        <Route path="artists" element={<Artists />} />
       </Route>
     </Routes>
   </BrowserRouter>

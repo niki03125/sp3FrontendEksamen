@@ -1,0 +1,53 @@
+.homeContainer {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.heroSection {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-top: 40px;
+}
+
+.heroContent {
+    flex: 1;
+}
+
+.heroTitle {
+    font-size: 3rem;
+    color: whitesmoke;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.heroText {
+    font-size: 1.1rem;
+    color: whitesmoke;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.imageContainer {
+    flex: 1;
+}
+
+.imgimg {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+@media (max-width: 768px) {
+    .heroSection {
+        flex-direction:column;
+        text-align: center;
+    }
+
+    .heroTitle {
+        font-size: 2rem;
+    }
+}

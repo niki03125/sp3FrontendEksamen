@@ -3,7 +3,7 @@ import styles from "./artists.module.css"
 
 const Artists = () => {
   const [artists, setArtists] = useState([]);
-  const APIURL = "https://music.codedbyniki.dk/api/v1/artist"; {/*https://music.codedbyniki.dk/api/v1/artist/  http://localhost:7071/api/v1/artist */}
+  const APIURL = "/api/v1/artist"; 
 
   useEffect(() => {
     fetch(APIURL)

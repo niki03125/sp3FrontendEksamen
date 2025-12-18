@@ -1,0 +1,45 @@
+.title {
+  padding-top: 10px;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Grid container */
+.gridTable {
+  margin: 0 auto;
+  width: min(900px, 95%);
+
+  display: grid;
+  grid-template-columns: 2.2fr 1.2fr 1.2fr 1fr 1.2fr;
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 18px;
+  border: 1px solid #d0d0d0;
+}
+
+/* Header cells */
+.gridHeader {
+  background-color: #7a7a7a;
+  color: white;
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+  border-right: 1px solid #d0d0d0;
+}
+
+.gridHeader:last-child {
+  border-right: none;
+}
+
+/* Data cells */
+.gridCell {
+  padding: 12px;
+  border-top: 1px solid #d0d0d0;
+  border-right: 1px solid #d0d0d0;
+}
+
+.gridCell:nth-child(5n) {
+  border-right: none;
+}

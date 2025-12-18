@@ -21,7 +21,6 @@ function Songs(){
                     <tr>
                         <th>Title</th>
                         <th>Artist</th>
-                        <th>Album</th>
                         <th>Duration</th>
                         <th>Release date</th>
                     </tr>
@@ -31,7 +30,6 @@ function Songs(){
                         <tr key = {song.songId}>
                             <td>{song.title}</td>
                             <td>{song.artistName}</td>
-                            <td>{song.album}</td>
                             <td>{song.duration}</td>
                             <td>{song.releaseDate.substring(0, 4)}</td>
                         </tr>

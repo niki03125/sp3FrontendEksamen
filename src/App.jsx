@@ -1,5 +1,6 @@
 import './App.css'
 import Header from './components/header/Header.jsx'
+import Footer from './components/footer/footer.jsx';
 import { Outlet} from 'react-router';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
     ]}
        />
     <Outlet/>
+    <Footer />
     </>
   )
 }

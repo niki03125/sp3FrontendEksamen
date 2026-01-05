@@ -4,7 +4,7 @@ import styles from "./artists.module.css"
 const Artists = () => {
   const [artists, setArtists] = useState([]);
   const APIURL = "/api/v1/artist"; 
-
+// 
   useEffect(() => {
     fetch(APIURL)
       .then((res) => res.json())

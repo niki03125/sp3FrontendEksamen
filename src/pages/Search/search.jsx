@@ -46,7 +46,7 @@ const Search = () => {
                     onChange={(e) => setArtistName(e.target.value)}
                     placeholder="Type an artist name..."
                     />
-                    <button className={styles.button} type="subit">
+                    <button className={styles.button} type="submit">
                         Search
                     </button>
             </form>

@@ -11,7 +11,7 @@ import Artists from './pages/Artists/artists.jsx';
 import Admin from './pages/Admin/admin.jsx';
 
 createRoot(document.getElementById('root')).render(
-    <BrowserRouter>
+    <BrowserRouter /*basename="/sp3FrontendEksamen"*/>
     <Routes>
       <Route path="/" element={<App />}>
         <Route index element={<div className="welcome">Welcome to our songs thing</div>} />
